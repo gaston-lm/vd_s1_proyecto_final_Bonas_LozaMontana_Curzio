@@ -1,0 +1,77 @@
+{
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+          },
+          "href": "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+          "id": "51Blml2LZPmy7TTiAg47vQ",
+          "name": "U2",
+          "type": "artist",
+          "uri": "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6S9YaGXnmRe8tWJ0e457HP"
+      },
+      "href": "https://api.spotify.com/v1/albums/6S9YaGXnmRe8tWJ0e457HP",
+      "id": "6S9YaGXnmRe8tWJ0e457HP",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731721039eb3dfadd939938d70",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021721039eb3dfadd939938d70",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511721039eb3dfadd939938d70",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "Songs Of Experience (Deluxe Edition)",
+      "release_date": "2017-12-01",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:6S9YaGXnmRe8tWJ0e457HP"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+        "id": "51Blml2LZPmy7TTiAg47vQ",
+        "name": "U2",
+        "type": "artist",
+        "uri": "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 238293,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM71704335"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/4nXYb4yc3c1a3NWqdpDrnd"
+    },
+    "href": "https://api.spotify.com/v1/tracks/4nXYb4yc3c1a3NWqdpDrnd",
+    "id": "4nXYb4yc3c1a3NWqdpDrnd",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Get Out Of Your Own Way",
+    "popularity": 49,
+    "preview_url": "https://p.scdn.co/mp3-preview/eea6f2992296dfce9caf33205c22a3d27889f0d4?cid=0b297fa8a249464ba34f5861d4140e58",
+    "track_number": 4,
+    "type": "track",
+    "uri": "spotify:track:4nXYb4yc3c1a3NWqdpDrnd"
+}

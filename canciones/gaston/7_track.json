@@ -1,0 +1,77 @@
+{
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
+          },
+          "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
+          "id": "3mIj9lX2MWuHmhNCA7LSCW",
+          "name": "The 1975",
+          "type": "artist",
+          "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6dVCpQ7oGJD1oYs2fv1t5M"
+      },
+      "href": "https://api.spotify.com/v1/albums/6dVCpQ7oGJD1oYs2fv1t5M",
+      "id": "6dVCpQ7oGJD1oYs2fv1t5M",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731f44db452a68e229650a302c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021f44db452a68e229650a302c",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511f44db452a68e229650a302c",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "Being Funny In A Foreign Language",
+      "release_date": "2022-10-14",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:6dVCpQ7oGJD1oYs2fv1t5M"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
+        },
+        "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
+        "id": "3mIj9lX2MWuHmhNCA7LSCW",
+        "name": "The 1975",
+        "type": "artist",
+        "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 178617,
+    "explicit": true,
+    "external_ids": {
+      "isrc": "GBK3W2202314"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0eNfURq0r0oNSwFyw1VuVT"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0eNfURq0r0oNSwFyw1VuVT",
+    "id": "0eNfURq0r0oNSwFyw1VuVT",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Looking For Somebody (To Love)",
+    "popularity": 70,
+    "preview_url": "https://p.scdn.co/mp3-preview/b3c648188063d2e2bbf828268ed9c446cbd5d5bc?cid=0b297fa8a249464ba34f5861d4140e58",
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:0eNfURq0r0oNSwFyw1VuVT"
+  }
