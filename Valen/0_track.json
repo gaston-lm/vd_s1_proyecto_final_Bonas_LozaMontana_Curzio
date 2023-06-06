@@ -1,0 +1,77 @@
+{
+  "album": {
+    "album_type": "album",
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/059ysTnWcrm4yFwTr0NDjc"
+        },
+        "href": "https://api.spotify.com/v1/artists/059ysTnWcrm4yFwTr0NDjc",
+        "id": "059ysTnWcrm4yFwTr0NDjc",
+        "name": "Catupecu Machu",
+        "type": "artist",
+        "uri": "spotify:artist:059ysTnWcrm4yFwTr0NDjc"
+      }
+    ],
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/1nE0dr9IW4y6nKDtVO8yTn"
+    },
+    "href": "https://api.spotify.com/v1/albums/1nE0dr9IW4y6nKDtVO8yTn",
+    "id": "1nE0dr9IW4y6nKDtVO8yTn",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2736961872106b3ce3d9cf7d230",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e026961872106b3ce3d9cf7d230",
+        "width": 300
+      },
+      {
+        "height": 64,
+        "url": "https://i.scdn.co/image/ab67616d000048516961872106b3ce3d9cf7d230",
+        "width": 64
+      }
+    ],
+    "is_playable": true,
+    "name": "El Número Imperfecto",
+    "release_date": "2004-01-01",
+    "release_date_precision": "day",
+    "total_tracks": 11,
+    "type": "album",
+    "uri": "spotify:album:1nE0dr9IW4y6nKDtVO8yTn"
+  },
+  "artists": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/059ysTnWcrm4yFwTr0NDjc"
+      },
+      "href": "https://api.spotify.com/v1/artists/059ysTnWcrm4yFwTr0NDjc",
+      "id": "059ysTnWcrm4yFwTr0NDjc",
+      "name": "Catupecu Machu",
+      "type": "artist",
+      "uri": "spotify:artist:059ysTnWcrm4yFwTr0NDjc"
+    }
+  ],
+  "disc_number": 1,
+  "duration_ms": 238573,
+  "explicit": false,
+  "external_ids": {
+    "isrc": "ARF040400447"
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/track/6zielPkg61vCK5DfqqvjE9"
+  },
+  "href": "https://api.spotify.com/v1/tracks/6zielPkg61vCK5DfqqvjE9",
+  "id": "6zielPkg61vCK5DfqqvjE9",
+  "is_local": false,
+  "is_playable": true,
+  "name": "Magia Veneno",
+  "popularity": 59,
+  "preview_url": "https://p.scdn.co/mp3-preview/cd27da24c483a2b552bf5ea44ff0ea9874f39426?cid=0b297fa8a249464ba34f5861d4140e58",
+  "track_number": 1,
+  "type": "track",
+  "uri": "spotify:track:6zielPkg61vCK5DfqqvjE9"
+}

@@ -1,0 +1,77 @@
+{
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+          },
+          "href": "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+          "id": "51Blml2LZPmy7TTiAg47vQ",
+          "name": "U2",
+          "type": "artist",
+          "uri": "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/72jdJEV95RFo6oecTO5tVk"
+      },
+      "href": "https://api.spotify.com/v1/albums/72jdJEV95RFo6oecTO5tVk",
+      "id": "72jdJEV95RFo6oecTO5tVk",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2731aa69db93ccf406b7fdaa911",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e021aa69db93ccf406b7fdaa911",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048511aa69db93ccf406b7fdaa911",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "name": "U218 Singles (Deluxe Version)",
+      "release_date": "2006-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 27,
+      "type": "album",
+      "uri": "spotify:album:72jdJEV95RFo6oecTO5tVk"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+        },
+        "href": "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+        "id": "51Blml2LZPmy7TTiAg47vQ",
+        "name": "U2",
+        "type": "artist",
+        "uri": "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 286480,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBUM70605565"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/63eQZg90zyotCRAXPJoJFv"
+    },
+    "href": "https://api.spotify.com/v1/tracks/63eQZg90zyotCRAXPJoJFv",
+    "id": "63eQZg90zyotCRAXPJoJFv",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Where The Streets Have No Name",
+    "popularity": 49,
+    "preview_url": "https://p.scdn.co/mp3-preview/e7f40c8971da77ffffef116bc795f0c8dc9e2f93?cid=0b297fa8a249464ba34f5861d4140e58",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:63eQZg90zyotCRAXPJoJFv"
+  }
