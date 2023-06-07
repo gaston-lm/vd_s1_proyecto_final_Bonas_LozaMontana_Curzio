@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Song Preview</title>
+  <style>
+    .song {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Song Preview</h1>
+  <div id="songsContainer">
+    <!-- Songs will be dynamically added here -->
+  </div>
+
+  <audio id="audioPlayer" controls style="display: none;"></audio>
+
+  <script>
+    // Fetch the JSON data
+    fetch('test.json')
+      .then(response => response.json())
+      .then(data => {
+        const songsContainer = document.getElementById('songsContainer');
+
+        // Create song elements dynamically
+        data.songs.forEach(song => {
+          const songElement = document.createElement('div');
+          songElement.classList.add('song');
+          songElement.textContent = song.title;
+
+          // Add event listener for hover
+          songElement.addEventListener('mouseenter', () => {
+            // Set audio source and play
+            document.getElementById('audioPlayer').src = song.preview_url;
+            document.getElementById('audioPlayer').play();
+          });
+
+          // Add event listener for mouseout
+          songElement.addEventListener('mouseout', () => {
+            // Pause audio
+            document.getElementById('audioPlayer').pause();
+          });
+
+          // Append song element to container
+          songsContainer.appendChild(songElement);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
