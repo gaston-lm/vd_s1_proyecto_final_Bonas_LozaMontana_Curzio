@@ -1,26 +1,22 @@
 const selectedAnswers = {}; // Data structure to store selected answers
 
+document.getElementById('inicio_quiz').addEventListener('click', function() {
+  var pregunta1 = document.getElementById('pregunta_1');
+  pregunta1.scrollIntoView({ behavior: 'smooth' });
+});
+
 // Fetch data for Question 1
 fetch('songs.json')
   .then(response => response.json())
   .then(data => {
     const options = document.querySelectorAll('#question_1 svg');
-
+    const nextQuestionContainer = document.querySelector('#pregunta_2');
     options.forEach((option, index) => {
       option.addEventListener('click', () => {
         const answerNumber = index + 1;
 
         selectedAnswers['question_1'] = answerNumber;
         console.log(selectedAnswers); // Display the selected answers in the console
-
-        // Example decision-making based on selected answers for Question 1
-        if (answerNumber === 1) {
-          // Handle decision for Question 1, Answer 1
-        } else if (answerNumber === 2) {
-          // Handle decision for Question 1, Answer 2
-        }
-        // Add more conditions as needed
-
         disableOptions('question_1');
       });
 
@@ -42,22 +38,13 @@ fetch('songs.json')
   .then(response => response.json())
   .then(data => {
     const options = document.querySelectorAll('#question_2 svg');
-
+    const nextQuestionContainer = document.querySelector('#pregunta_3');
     options.forEach((option, index) => {
       option.addEventListener('click', () => {
         const answerNumber = index + 1;
 
         selectedAnswers['question_2'] = answerNumber;
         console.log(selectedAnswers); // Display the selected answers in the console
-
-        // Example decision-making based on selected answers for Question 2
-        if (answerNumber === 1) {
-          // Handle decision for Question 2, Answer 1
-        } else if (answerNumber === 2) {
-          // Handle decision for Question 2, Answer 2
-        }
-        // Add more conditions as needed
-
         disableOptions('question_2');
       });
 
@@ -84,5 +71,25 @@ function disableOptions(questionId) {
 }
 
 
+// scroll a siguiente pregunta
 
+var preguntas = document.getElementsByClassName('preguntas');
 
+for (var i = 0; i < preguntas.length; i++) {
+  var options = preguntas[i].querySelectorAll('.opciones svg');
+  for (var j = 0; j < options.length; j++) {
+    options[j].addEventListener('click', scrollToNextQuestion);
+  }
+}
+
+function scrollToNextQuestion() {
+  // Find the index of the current question
+  var currentQuestionIndex = Array.from(preguntas).findIndex(function (question) {
+    return question.contains(this);
+  }, this.closest('.preguntas'));
+
+  // Scroll to the next question if available
+  if (currentQuestionIndex < preguntas.length - 1) {
+    preguntas[currentQuestionIndex + 1].scrollIntoView({ behavior: 'smooth' });
+  }
+}
