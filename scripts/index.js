@@ -1,9 +1,9 @@
 const selectedAnswers = {}; // Data structure to store selected answers
 
-document.getElementById('inicio_quiz').addEventListener('click', function() {
-  var pregunta1 = document.getElementById('pregunta_1');
-  pregunta1.scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('inicio_quiz').addEventListener('click', function() {
+//   var pregunta1 = document.getElementById('reference_section');
+//   pregunta1.scrollIntoView({ behavior: 'smooth' });
+// });
 
 // Fetch data for Question 1
 fetch('songs.json')
