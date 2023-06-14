@@ -1,0 +1,22 @@
+{
+    "canciones": [
+        {
+            "title": "Get Out Of Your Own Way",
+            "id": "4nXYb4yc3c1a3NWqdpDrnd",
+            "artist": "U2",
+            "danceability": 0.564,
+            "energy": 0.781,
+            "key": 2,
+            "loudness": -9.697,
+            "mode": 1,
+            "speechiness": 0.0517,
+            "acousticness": 0.0273,
+            "instrumentalness": 0.0000494,
+            "liveness": 0.561,
+            "valence": 0.415,
+            "tempo": 130.035,
+            "popularity": 49,
+            "preview_url": "https://p.scdn.co/mp3-preview/eea6f2992296dfce9caf33205c22a3d27889f0d4?cid=0b297fa8a249464ba34f5861d4140e58"
+        }
+    ]
+}
