@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Pruebas</title>
+    <title>Music-Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/general.css"/>
     <link rel="stylesheet" href="styles/index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/"/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -46,8 +47,8 @@
               y tu personalidad, relacionándolo con los founders de Spootify. 
               Luego, seleccionaremos canciones para recomendarte en base a tu gusto y 
               podrás ver las características de las mismas.</p>
-            <a href="#reference_section"><div id="container_inicio_quiz">
-              <h3 id="inicio_quiz">Empezar Quiz</h3>
+            <a href="#reference_founders"><div id="container_inicio_quiz">
+              <h3 id="inicio_quiz">Comenzar</h3>
             </div></a>
           </div>
           <div id="intro_svg">
@@ -80,9 +81,34 @@
           </div>
         </section>
 
+        <section class="founders" id="reference_founders">
+          <h2>¿Quiénes somos?</h2>
+          <p>Como hemos mencionado, las preguntas serán relacionadas a los founders de Spootify, por ahora no conocerás nuestros gustos musicales, pero te mostramos quienes somos.</p>
+          <div class="integrantes">
+            <div>
+              <img src="media\founders\cto.png" alt="Valentín Bonás">
+              <h4>Valentín Bonás</h4>
+              <p>CTO</p>
+            </div>
+            <div>
+              <img src="media\founders\ceo.png" alt="Gastón Loza Montaña">
+              <h4>Gastón Loza Montaña</h4>
+              <p>CEO</p>
+            </div>
+            <div>
+              <img src="media\founders\cfo.png" alt="Tomás Curzio">
+              <h4>Tomás Curzio</h4>
+              <p>CFO</p>
+            </div>
+          </div>
+          <a href="#reference_section"><div id="container_next">
+            <h3 class="next_button">></h3>
+          </div></a>
+        </section>
+
         <section id="reference_section">
           <h2>¿Cómo verás las canciones?</h2>
-          <p>Las canciones se mostrarán con formas florales, desde un círculo perfecto hasta 
+          <p id="explain_text">Las canciones se mostrarán con formas florales, desde un círculo perfecto hasta 
             una flor con muchos pétalos, y con distintos colores. Al posarnos con el mouse 
             sobre ellas escucharemos un pequeño fragmento de las mismas.</p>
 
@@ -154,62 +180,10 @@
             </div>
           </div>
         </section>
-
-        <section class="founders">
-          <h2>¿Quiénes somos?</h2>
-          <p>Como hemos mencionado, las preguntas serán relacionadas a los founders de Spootify, por ahora no conocerás nuestros gustos musicales, pero te mostramos quienes somos.</p>
-          <div class="integrantes">
-            <div>
-              <img src="media\founders\cto.png" alt="Valentín Bonás">
-              <h4>Valentín Bonás</h4>
-              <p>CTO</p>
-            </div>
-            <div>
-              <img src="media\founders\ceo.png" alt="Gastón Loza Montaña">
-              <h4>Gastón Loza Montaña</h4>
-              <p>CEO</p>
-            </div>
-            <div>
-              <img src="media\founders\cfo.png" alt="Tomás Curzio">
-              <h4>Tomás Curzio</h4>
-              <p>CFO</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="quiz">
-          <div class="preguntas" id="pregunta_1">
-              <h2>¿Qué canción elegis?</h2>
-              <p>.</p>
-              <div class="opciones" id="question_1">
-                  <svg width="300" height="200" id="question_1_1">
-                    <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                  </svg>
-                  <svg width="300" height="200" id="question_1_2">
-                    <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                  </svg>
-                  <svg width="300" height="200" id="question_1_3">
-                    <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                  </svg>
-              </div>
-          </div>
-
-          <div class="preguntas" id="pregunta_2">
-            <h2>¿Qué canción elegis?</h2>
-            <p>.</p>
-            <div class="opciones" id="question_2">
-                <svg width="300" height="200" id="question_2_1">
-                  <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                </svg>
-                <svg width="300" height="200" id="question_2_2">
-                  <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                </svg>
-                <svg width="300" height="200" id="question_2_3">
-                  <image xlink:href="Instagram.svg" width="100%" height="100%" />
-                </svg>
-            </div>
-          </div>
-        </section>
+        
+        <a href="quiz.html"><div id="container_inicio_quiz">
+          <h3 id="inicio_quiz">Comenzar</h3>
+        </div></a>
 
         <!-- <section id="scrolly">
           <figure></figure>
@@ -233,27 +207,7 @@
             </div>
           </article>
         </section> -->
-
-        <section>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus. Erat nam at lectus
-            urna duis convallis. In eu mi bibendum neque egestas congue. Ut lectus arcu bibendum at.
-            Sit amet nisl purus in mollis nunc. Et malesuada fames ac turpis egestas sed tempus urna.
-            Velit egestas dui id ornare arcu odio ut sem nulla. Egestas tellus rutrum tellus
-            pellentesque eu tincidunt tortor. Ut lectus arcu bibendum at varius vel. Justo eget magna
-            fermentum iaculis eu. Consequat id porta nibh venenatis cras sed felis eget velit. Nisi
-            scelerisque eu ultrices vitae auctor eu augue.
-          </p>
-          <div id="chart"></div>
-        </section>
       </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-
-    <script type="module" src="./scripts/index.js"></script>
-    <script src="scripts\chartScript.js"></script>
   </body>
 </html>

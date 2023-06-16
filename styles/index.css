@@ -25,91 +25,13 @@ section {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #container {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-/* header */
-
-.fixed-header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  justify-content: space-between;
-  font-weight: 600;
-  background: linear-gradient(180deg, #262323 0%, rgba(38, 35, 35, 0.95026) 99.99%, rgba(30, 28, 28, 0.95) 100%);
-  margin: 0 auto;
-  /* height: 12%; */
-  height: 79px;
-}
-
-.header_sections {
-  display: flex;
-}
-
-#searcher {
-  display: flex;
-  border: 2px solid #76A5C4;
-  border-radius: 30px;
-  align-items: center;
-  margin-left: 25px;
-}
-
-#searcher p {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#searcher svg {
-  margin-left: 15px;
-  margin-right: 9px;
-}
-
-#searcher p {
-  margin-right: 147px;
-  color: #76A5C4;
-}
-
-#logo {
-  margin-right: 25px;
-}
-
-.botones_header {
-  border-radius: 30px;
-  align-items: center;
-  width: 100px;
-  margin-left: 10px;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-}
-
-#sign_up {
-  background-color: #76A5C4;
-  border-radius: 30px;
-  color: #1E1C1C;
-  transition: background-color 0.3s ease;
-}
-
-#sign_up:hover {
-  background-color: #8eb3ce; 
-}
-
-#log_in {
-  color: #E6E6E6;
-  transition: color 0.3s ease;
-}
-
-#log_in:hover {
-  color: #76A5C4;
 }
 
 /* landing */
@@ -123,15 +45,12 @@ main {
 }
 
 #intro_svg svg {
-  /* width: 28vw; */
   height: 23em;
-  /* transform: scale(1.35); */
-  margin-right: 40px;
+  margin-right: 2em;
 } 
 
 #intro_text {
   margin-top: 10px;
-  padding-right: 10vw;
 }
 
 #intro_text h1 {
@@ -149,7 +68,6 @@ main {
   margin-top: 18px;
   padding-right: 15%;
   line-height: 1.3em;
-  max-width: 585px;
 }
 
 #container_inicio_quiz {
@@ -195,6 +113,10 @@ main {
   text-align: center;
 }
 
+#explain_text {
+  margin-bottom: 40px;
+}
+
 .references_type h3 {
   text-align: center;
   margin-bottom: 45px;
@@ -214,13 +136,33 @@ main {
   align-items: center;
 }
 
+/* botón next */
+
+.next_button {
+  font-size: 16px;
+  color: #1E1C1C;
+}
+
+#container_next {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  background-color: #555;
+  border-radius: 30px;
+  align-items: center;
+  margin-top: 0px;
+  transition: background-color 0.4s ease;
+  margin-left: 1100px;
+}
+
 /* founders */
 
 .founders {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
 }
 
@@ -257,9 +199,10 @@ main {
 
 .integrantes p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
+  margin-top: 10px;
 }
-
+/*
 .intro__dek {
   color: #8a8a8a;
 }
@@ -282,7 +225,7 @@ main {
 
 #scrolly {
   position: relative;
-  /* background-color: #f3f3f3; */
+  /* background-color: #f3f3f3; 
   padding: 1rem;
 }
 
@@ -307,7 +250,7 @@ figure {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  /* background-color: #8a8a8a; */
+  background-color: #8a8a8a;
   z-index: 0;
   height: 100vh;
   top: 0;
@@ -350,46 +293,11 @@ figure p {
   background-color: #3b3b3b;
 }
 
-/* Plot */
+/* Plot 
 g[aria-label="text"] text {
   font-weight: bold;
   font-size: 9px;
   text-shadow: -2px -2px 0px whitesmoke, -2px -1px 0px whitesmoke, -2px 0px 0px whitesmoke, -2px 1px 0px whitesmoke, -2px 2px 0px whitesmoke, -1px -2px 0px whitesmoke, -1px -1px 0px whitesmoke, -1px 0px 0px whitesmoke, -1px 1px 0px whitesmoke, -1px 2px 0px whitesmoke, 0px -2px 0px whitesmoke, 0px -1px 0px whitesmoke, 0px 1px 0px whitesmoke, 0px 2px 0px whitesmoke, 1px -2px 0px whitesmoke, 1px -1px 0px whitesmoke, 1px 0px 0px whitesmoke, 1px 1px 0px whitesmoke, 1px 2px 0px whitesmoke, 2px -2px 0px whitesmoke, 2px -1px 0px whitesmoke, 2px 0px 0px whitesmoke, 2px 1px 0px whitesmoke, 2px 2px 0px whitesmoke;
 }
 
-/* Extras */
-
-.opciones {
-  display: flex;
-  justify-content: center;
-}
-
-.preguntas {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
-/* For Webkit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #262323;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+*/

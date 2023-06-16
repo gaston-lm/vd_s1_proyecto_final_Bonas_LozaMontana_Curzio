@@ -1,0 +1,100 @@
+/* header */
+
+.fixed-header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  background: linear-gradient(180deg, #262323 0%, rgba(38, 35, 35, 0.95026) 99.99%, rgba(30, 28, 28, 0.95) 100%);
+  margin: 0 auto;
+  height: 79px;
+}
+
+.header_sections {
+  display: flex;
+}
+
+#searcher {
+  display: flex;
+  border: 2px solid #76A5C4;
+  border-radius: 30px;
+  align-items: center;
+  margin-left: 25px;
+}
+
+#searcher p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#searcher svg {
+  margin-left: 15px;
+  margin-right: 9px;
+}
+
+#searcher p {
+  margin-right: 147px;
+  color: #76A5C4;
+}
+
+#logo {
+  margin-right: 25px;
+}
+
+.botones_header {
+  border-radius: 30px;
+  align-items: center;
+  width: 100px;
+  margin-left: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+#sign_up {
+  background-color: #76A5C4;
+  border-radius: 30px;
+  color: #1E1C1C;
+  transition: background-color 0.3s ease;
+}
+
+#sign_up:hover {
+  background-color: #8eb3ce; 
+}
+
+#log_in {
+  color: #E6E6E6;
+  transition: color 0.3s ease;
+}
+
+#log_in:hover {
+  color: #76A5C4;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #262323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
