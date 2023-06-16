@@ -8,7 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   min-height: 1280px;
   font-size: 24px;
-  background-color: #1E1C1C;
+  background-color: #262323;
   color: #E6E6E6;
 }
 
@@ -28,7 +28,6 @@ main {
 }
 
 #container {
-  max-width: 1224px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -46,9 +45,10 @@ main {
   padding-bottom: 20px;
   justify-content: space-between;
   font-weight: 600;
-  background-color: #1E1C1C;
-  max-width: 1224px;
+  background: linear-gradient(180deg, #262323 0%, rgba(38, 35, 35, 0.95026) 99.99%, rgba(30, 28, 28, 0.95) 100%);
   margin: 0 auto;
+  /* height: 12%; */
+  height: 79px;
 }
 
 .header_sections {
@@ -60,6 +60,7 @@ main {
   border: 2px solid #76A5C4;
   border-radius: 30px;
   align-items: center;
+  margin-left: 25px;
 }
 
 #searcher p {
@@ -68,7 +69,7 @@ main {
 }
 
 #searcher svg {
-  margin-left: 9px;
+  margin-left: 15px;
   margin-right: 9px;
 }
 
@@ -84,7 +85,7 @@ main {
 .botones_header {
   border-radius: 30px;
   align-items: center;
-  width: 110px;
+  width: 100px;
   margin-left: 10px;
   font-size: 14px;
   display: flex;
@@ -95,9 +96,19 @@ main {
   background-color: #76A5C4;
   border-radius: 30px;
   color: #1E1C1C;
+  transition: background-color 0.3s ease;
+}
+
+#sign_up:hover {
+  background-color: #8eb3ce; 
 }
 
 #log_in {
+  color: #E6E6E6;
+  transition: color 0.3s ease;
+}
+
+#log_in:hover {
   color: #76A5C4;
 }
 
@@ -106,15 +117,17 @@ main {
 #intro {
   display: flex;
   margin-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
   height: 100vh;
 }
 
 #intro_svg svg {
   /* width: 28vw; */
-  height: 70vh;
-}
+  height: 23em;
+  /* transform: scale(1.35); */
+  margin-right: 40px;
+} 
 
 #intro_text {
   margin-top: 10px;
@@ -130,12 +143,13 @@ main {
 }
 
 #intro_text p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: #E6E6E6;
   margin-top: 18px;
   padding-right: 15%;
   line-height: 1.3em;
+  max-width: 585px;
 }
 
 #container_inicio_quiz {
@@ -146,12 +160,17 @@ main {
   background-color: #76A5C4;
   border-radius: 30px;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#container_inicio_quiz:hover {
+  background-color: #8eb3ce; 
 }
 
 #intro_text h3 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: #1E1C1C;
 }
 
@@ -208,7 +227,7 @@ main {
 .founders h2 {
   font-size: 50px;
   color: #76A5C4;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .integrantes {
@@ -217,8 +236,14 @@ main {
   gap: 70px;
 }
 
+.founders p {
+  max-width: 727px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
 .integrantes div {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,8 +257,7 @@ main {
 
 .integrantes p {
   font-size: 18px;
-  font-weight: 40;
-  margin-top: 10px;
+  font-weight: 500;
 }
 
 .intro__dek {
@@ -354,7 +378,7 @@ g[aria-label="text"] text {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1E1C1C;
+  background: #262323;
 }
 
 ::-webkit-scrollbar-thumb {
