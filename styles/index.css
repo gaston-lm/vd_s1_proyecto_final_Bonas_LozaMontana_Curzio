@@ -68,7 +68,7 @@
 #reference_section h2 {
   font-size: 50px;
   color: #76A5C4;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 #reference_section p {
@@ -83,8 +83,9 @@
 
 .references_type h3 {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   color: #76A5C4;
+  font-size: 35px;
 }
 
 .references_example {
@@ -92,12 +93,25 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-bottom: 70px;
 }
 
 .references_example div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#reference_section h5 {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 758px;
+  text-align: center;
+}
+
+#izq,
+#mid {
+  margin-right: 79px;
 }
 
 /* botón next */
@@ -126,8 +140,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   justify-content: center;
+  margin-top: 200px;
 }
 
 .founders h2 {

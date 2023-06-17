@@ -22,19 +22,42 @@
 }
 
 .preguntas h2 {
-  font-size: 80px;
+  font-size: 100px;
   margin: 0;
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 #pregunta_1 h2 {
-  margin-top: 0px !important; 
+  margin-top: -20px !important; 
+}
+
+#pregunta_1 h3,
+#pregunta_3 h3,
+#pregunta_5 h3,
+#pregunta_7 h3,
+#pregunta_9 h3 {
+  width: 676px;
+}
+
+#pregunta_2 h3,
+#pregunta_4 h3,
+#pregunta_6 h3,
+#pregunta_8 h3,
+#pregunta_10 h3 {
+  width: 844px;
 }
 
 .preguntas h3 {
-  font-size: 45px;
+  font-size: 50px;
   color: #76A5C4;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#izq,
+#mid {
+  margin-right: 100px;
 }
 
 #pregunta_10 {
