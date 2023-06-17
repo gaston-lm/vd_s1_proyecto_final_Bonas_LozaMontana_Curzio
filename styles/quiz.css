@@ -1,5 +1,9 @@
 /* Quiz */
 
+body {
+  overflow-y: hidden;
+}
+
 .opciones {
   display: flex;
   justify-content: center;
