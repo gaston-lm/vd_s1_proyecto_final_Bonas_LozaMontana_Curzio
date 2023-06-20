@@ -9,23 +9,23 @@ playlist=data['canciones']
 for canciones in playlist:
     if canciones["valence"]<=0.3 and canciones["energy"]<=0.3:
         canciones["blob"] = "media/figuras/11.svg"
-    if canciones["valence"]<=0.3 and 0.3<canciones["energy"]<=0.6:
+    if canciones["valence"]<=0.3 and 0.3<canciones["energy"]<=0.66:
         canciones["blob"]="media/figuras/12.svg"
-    if canciones["valence"]<=0.3 and 0.6<canciones["energy"]<=1:
+    if canciones["valence"]<=0.3 and 0.66<canciones["energy"]<=1:
         canciones["blob"]="media/figuras/13.svg"
     
-    if 0.3<canciones["valence"]<=0.6 and canciones["energy"]<=0.3:
+    if 0.3<canciones["valence"]<=0.66 and canciones["energy"]<=0.3:
         canciones["blob"]="media/figuras/21.svg"
-    if 0.3<canciones["valence"]<=0.6 and 0.3<canciones["energy"]<=0.6:
+    if 0.3<canciones["valence"]<=0.66 and 0.3<canciones["energy"]<=0.66:
         canciones["blob"]="media/figuras/22.svg"
-    if 0.3<canciones["valence"]<=0.6 and 0.6<canciones["energy"]<=1:
+    if 0.3<canciones["valence"]<=0.66 and 0.66<canciones["energy"]<=1:
         canciones["blob"]="media/figuras/23.svg"
 
-    if 0.6<canciones["valence"]<=1 and canciones["energy"]<=0.3:
+    if 0.66<canciones["valence"]<=1 and canciones["energy"]<=0.3:
         canciones["blob"]="media/figuras/31.svg"
-    if 0.6<canciones["valence"]<=1 and 0.3<canciones["energy"]<=0.6:
+    if 0.66<canciones["valence"]<=1 and 0.3<canciones["energy"]<=0.66:
         canciones["blob"]="media/figuras/32.svg"
-    if 0.6<canciones["valence"]<=1 and 0.6<canciones["energy"]<=1:
+    if 0.66<canciones["valence"]<=1 and 0.66<canciones["energy"]<=1:
         canciones["blob"]="media/figuras/33.svg"
 
     

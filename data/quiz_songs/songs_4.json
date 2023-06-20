@@ -1,0 +1,7 @@
+{
+    "songs": [
+        {"name": "Million Pieces", "id": "75cBWwcUdfzQfoj4d16IPP", "artist": "Bastille", "danceability": 0.217, "energy": 0.779, "key": 1, "loudness": -6.079, "mode": 1, "speechiness": 0.0903, "acousticness": 0.674, "instrumentalness": 0, "liveness": 0.331, "valence": 0.43, "tempo": 82.989, "popularity": 44, "preview_url": "https://p.scdn.co/mp3-preview/6e510913b14452f598595a5f6fbe11d88aa2a51c?cid=0b297fa8a249464ba34f5861d4140e58", "integrante": "Gaston", "explicit": 1, "blob": "media/figuras/23.svg"},
+        {"name": "anything", "popularity": 17, "preview_url": "https://p.scdn.co/mp3-preview/e2d939054c9d00c2d5a63619daa6f787c05cef2a?cid=0b297fa8a249464ba34f5861d4140e58", "artist": "Adrianne Lenker", "id": "2k5ODImZ9YuXJLZUaBS3Xn", "danceability": 0.388, "energy": 0.291, "key": 3, "loudness": -12.952, "mode": 1, "speechiness": 0.0421, "acousticness": 0.774, "instrumentalness": 1.93e-05, "liveness": 0.0874, "valence": 0.51, "tempo": 83.943, "integrante": "Tomi", "explicit": 0, "blob": "media/figuras/21.svg"},
+        {"name": "Paranoid", "popularity": 40, "preview_url": "https://p.scdn.co/mp3-preview/8ab2f41c0cae1415bc454e8e7420f2bbeaf80663?cid=0b297fa8a249464ba34f5861d4140e58", "artist": "Black Sabbath", "id": "3ebrniHtOzNWigJhEkWguR", "danceability": 0.239, "energy": 0.961, "key": 8, "loudness": -6.695, "mode": 1, "speechiness": 0.128, "acousticness": 9.44e-05, "instrumentalness": 0.0619, "liveness": 0.964, "valence": 0.182, "tempo": 176.343, "integrante": "Valen", "explicit": 1, "blob": "media/figuras/13.svg"}    
+    ]
+  }
