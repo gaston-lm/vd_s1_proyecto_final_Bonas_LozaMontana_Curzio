@@ -9,19 +9,35 @@ console.log(answerCounts[3]);
 function displayAnswerPercentages(answerCounts) {
 
   let answerPercentages = {};
+
+  let percentageValen
+  let percentageGaston;
+  let percentageTomi;
   // Calculate the percentages for each answer option
-  const percentageValen = (answerCounts[1] / 10) * 100;
+  if (answerCounts[1] >= 5) {
+    percentageValen = (5 / 10) * 100;
+    percentageGaston = (3 / 10) * 100;
+    percentageTomi = (2 / 10) * 100;
+  } else if (answerCounts[2] >= 5) {
+    percentageValen = (3 / 10) * 100;
+    percentageGaston = (6 / 10) * 100;
+    percentageTomi = (1 / 10) * 100;
+  } else if (answerCounts[3] >= 5) {
+    percentageValen = (2 / 10) * 100;
+    percentageGaston = (2 / 10) * 100;
+    percentageTomi = (6 / 10) * 100;
+  } else {
+    percentageValen = (3 / 10) * 100;
+    percentageGaston = (4 / 10) * 100;
+    percentageTomi = (3 / 10) * 100;
+  }
+
   answerPercentages['Valen'] = percentageValen;
-
-  const percentageGaston = (answerCounts[2] / 10) * 100;
   answerPercentages['Gaston'] = percentageGaston;
-
-  const percentageTomi = (answerCounts[3] / 10) * 100;
   answerPercentages['Tomi'] = percentageTomi;
 
-
   // Display the percentages in the HTML
-  const options = document.querySelectorAll('.answer-option');
+  const options = document.querySelectorAll('.result_int');
   options.forEach(option => {
     const optionId = option.id;
     const percentage = answerPercentages[optionId] || '0.00'; // Default to 0 if no count is available
@@ -31,6 +47,9 @@ function displayAnswerPercentages(answerCounts) {
 }
 
 displayAnswerPercentages(answerCounts);
+
+
+// ---------------------------------------------------------------------------------------
 
 // using d3 for convenience
 let main = d3.select("main");
@@ -77,7 +96,7 @@ function handleStepEnter(response) {
   // console.log("response.element", response.element);
   // console.log("$step", $step);
   // console.log("key", key);
-
+  console.log(key)
   createChart(key);
 }
 
