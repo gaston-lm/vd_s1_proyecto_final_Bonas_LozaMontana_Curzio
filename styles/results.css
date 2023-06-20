@@ -27,9 +27,9 @@
   margin-bottom: -50px;
 }
 
-h4 {
-  font-weight: 500 !important; 
-  font-size: 35px !important;
+.result_int h4 {
+  font-weight: 500; 
+  font-size: 35px;
   color: #E6E6E6;
   margin-bottom: 30px;
 }
@@ -37,8 +37,33 @@ h4 {
 #Gaston {
   margin-right: 219px;
 }
+
 #Valen {
   margin-right: 219px;
+}
+
+.explicit_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+.explicit_sec h2 {
+  font-size: 50px;
+  color: #76A5C4;
+  margin-bottom: 5px;
+}
+
+.explicit_sec p {
+  font-size: 18px;
+  font-weight: 300;
+  width: 720px;
+  text-align: center;
+}
+
+.chart_section {
+  display: flex;
 }
 
 nav {

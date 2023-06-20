@@ -1,32 +1,33 @@
-d3.json("data/pruebas.json", d3.autoType).then((data)=>{
-  const canciones = data.canciones
+d3.json("data/playlist/playlist_valen.json", d3.autoType).then((data)=>{
+  const canciones = data.songs
   console.log(canciones)
   let chart = Plot.plot({
 
     marks: [
-      // Plot.dot(canciones, {
-      //   x: "popularity",
-      //   y: "danceability",
-      //   title: d => d.name,
-      //   fill: "integrante",
-      //   r: 4
-      // }),
       Plot.image(canciones,
-        Plot.dodgeY({
-          x: "integrante",
+        Plot.dodgeX({
+          y: "explicit",
           padding: 15,
-          r: 40,
+          r: 60,
           src: "blob",
-          anchor: "middle",
           title: "name"
         })
       ),
+      Plot.axisY(
+        {
+          tickSize: 0,
+          fontSize: 0,
+        }
+      )
     ],
-    // x: { label: "tempo" },
-    // y: { label: "Danceability" },
-    width: 1200,
-    height: 500,
-    inset: 80,
+    y: {
+      label: '',
+      ticks: 0,
+    },
+    width: 1000,
+    height: 450,
+    insetTop: 40,
+    insetBottom: 40,
     style: {
       background: '#262323'
     }
