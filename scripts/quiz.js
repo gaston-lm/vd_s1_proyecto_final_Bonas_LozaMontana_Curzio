@@ -86,7 +86,7 @@ options_4.forEach((option) => {
 });
 
 // Fetch data para pregunta 5
-fetch('data/quiz_songs/songs_2.json')
+fetch('data/quiz_songs/songs_3.json')
   .then(response => response.json())
   .then(data => {
     const options = document.querySelectorAll('#question_5 svg');
@@ -128,7 +128,7 @@ options_6.forEach((option) => {
 });
 
 // Fetch data para pregunta 7
-fetch('data/quiz_songs/songs_2.json')
+fetch('data/quiz_songs/songs_4.json')
   .then(response => response.json())
   .then(data => {
     const options = document.querySelectorAll('#question_7 svg');
@@ -170,7 +170,7 @@ options_8.forEach((option) => {
 });
 
 // Fetch data para pregunta 9
-fetch('data/quiz_songs/songs_2.json')
+fetch('data/quiz_songs/songs_5.json')
   .then(response => response.json())
   .then(data => {
     const options = document.querySelectorAll('#question_9 svg');
