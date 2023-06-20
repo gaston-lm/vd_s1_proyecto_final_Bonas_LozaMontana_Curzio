@@ -1,0 +1,103 @@
+@keyframes medio {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-5px, -5px);
+    }
+    40% {
+      transform: translate(5px, -5px);
+    }
+    60% {
+      transform: translate(-5px, 5px);
+    }
+    80% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .vibrate-animationM {
+    transition: transform 0.2s;
+  }
+  
+  .vibrate-animationM:hover {
+    animation: medio 1s infinite;
+  }
+  
+  @keyframes rapido {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-5px, -5px);
+    }
+    20% {
+      transform: translate(5px, -5px);
+    }
+    30% {
+      transform: translate(-5px, 5px);
+    }
+    40% {
+      transform: translate(5px, 5px);
+    }
+    50% {
+      transform: translate(-5px, -5px);
+    }
+    60% {
+      transform: translate(5px, -5px);
+    }
+    70% {
+      transform: translate(-5px, 5px);
+    }
+    80% {
+      transform: translate(5px, 5px);
+    }
+    90% {
+      transform: translate(-5px, -5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .vibrate-animationR {
+    transition: transform 0.2s;
+  }
+  
+  .vibrate-animationR:hover {
+    animation: rapido 0.6s infinite;
+  }
+  
+  
+  
+  @keyframes lento {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-5px, -5px);
+    }
+    40% {
+      transform: translate(5px, -5px);
+    }
+    60% {
+      transform: translate(-5px, 5px);
+    }
+    80% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .vibrate-animationL {
+    transition: transform 0.2s;
+  }
+  
+  .vibrate-animationL:hover {
+    animation: lento 2s infinite;
+  }
