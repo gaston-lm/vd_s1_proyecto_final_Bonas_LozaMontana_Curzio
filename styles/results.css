@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .integrantes_results {
@@ -59,6 +60,23 @@
   font-size: 18px;
   font-weight: 300;
   width: 720px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.explicit_sec h3 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 85px;
+  color: #76A5C4;
+  margin-bottom: -60px;
+  text-align: center;
+}
+
+.explicit_sec h5 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: -20px;
   text-align: center;
 }
 
