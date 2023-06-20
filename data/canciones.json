@@ -17,7 +17,8 @@
             "tempo": 130.035,
             "popularity": 49,
             "preview_url": "https://p.scdn.co/mp3-preview/eea6f2992296dfce9caf33205c22a3d27889f0d4?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
 
         },
         {
@@ -37,7 +38,8 @@
             "tempo": 138.03,
             "popularity": 52,
             "preview_url": "https://p.scdn.co/mp3-preview/bcdf376c05d045b04276036eec4febbe335eafb5?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
 
         },
         {
@@ -57,7 +59,8 @@
             "tempo": 92.98,
             "popularity": 68,
             "preview_url": "https://p.scdn.co/mp3-preview/e7b61174a0bf9bfbac118b2541b00f82c47b3e46?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
         },
         {
             "name": "Like a Prayer - Live",
@@ -76,7 +79,8 @@
             "tempo": 112.137,
             "popularity": 65,
             "preview_url": "https://p.scdn.co/mp3-preview/71f12160419cf482d265752f3b837a6738cf1cad?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"   
+            "integrante":"Gaston",
+            "explicit": 0 
         },
         {
             "name": "Million Pieces",
@@ -95,7 +99,8 @@
             "tempo": 82.989,
             "popularity": 44,
             "preview_url": "https://p.scdn.co/mp3-preview/6e510913b14452f598595a5f6fbe11d88aa2a51c?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit":1
         },
         {
             "name": "Stubborn Love",
@@ -114,7 +119,8 @@
             "tempo": 115.022,
             "popularity": 69,
             "preview_url": "https://p.scdn.co/mp3-preview/689f540aacf5769f2229a7ce85ff4aa255fbfa1a?cid=0b297fa8a249464ba34f5861d4140e58",
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
         },
         {
             "name": "Chasing Pavements",
@@ -133,7 +139,8 @@
             "liveness": 0.111,
             "valence": 0.325,
             "tempo": 80.03,
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
         },
         {
             "name": "Looking For Somebody (To Love)",
@@ -152,7 +159,8 @@
             "liveness": 0.144,
             "valence": 0.917,
             "tempo": 170.91,
-            "integrante":"Gaston"        
+            "integrante":"Gaston",
+            "explicit": 1        
         },
         {
             "name": "Don't Panic",
@@ -171,7 +179,8 @@
             "liveness": 0.107,
             "valence": 0.453,
             "tempo": 122.062,
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
         },
         {
             "name": "Get Lucky (Radio Edit)",
@@ -190,7 +199,8 @@
             "liveness": 0.101,
             "valence": 0.862,
             "tempo": 116.047,
-            "integrante":"Gaston"
+            "integrante":"Gaston",
+            "explicit": 0
         
         },
         {
@@ -210,7 +220,8 @@
             "liveness": 0.0422,
             "valence": 0.413,
             "tempo": 135.987,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 0
           
         },
         {
@@ -230,7 +241,8 @@
             "liveness": 0.829,
             "valence": 0.689,
             "tempo": 134.913,
-            "integrante":"Valen"          
+            "integrante":"Valen",
+            "explicit": 0    
         },
         {
             "name": "Pasos Al Costado",
@@ -249,7 +261,8 @@
             "liveness": 0.355,
             "valence": 0.795,
             "tempo": 125.976,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 0
         },
         {
             "name": "The Trooper - 2015 Remaster",
@@ -268,7 +281,8 @@
             "liveness": 0.311,
             "valence": 0.669,
             "tempo": 159.756,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 0
             
           
         },
@@ -289,7 +303,8 @@
             "liveness": 0.399,
             "valence": 0.612,
             "tempo": 158.691,     
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 0
         },
         {
             "name": "Money For Nothing - Remastered 1996",
@@ -308,7 +323,8 @@
             "liveness": 0.074,
             "valence": 0.679,
             "tempo": 134.219,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 0
         },
         {
             "name": "Everlong",
@@ -327,7 +343,8 @@
             "liveness": 0.0805,
             "valence": 0.364,
             "tempo": 158.066,
-            "integrante":"Valen"        
+            "integrante":"Valen",
+            "explicit": 0        
         },
         {
             "name": "Paranoid",
@@ -346,7 +363,8 @@
             "liveness": 0.964,
             "valence": 0.182,
             "tempo": 176.343,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 1
         },
         {
             "name": "Soldier On!",
@@ -365,7 +383,8 @@
             "liveness": 0.377,
             "valence": 0.328,
             "tempo": 126.298,
-            "integrante":"Valen"
+            "integrante":"Valen",
+            "explicit": 1
         },
         {
             "name": "Wherever I May Roam",
@@ -384,9 +403,8 @@
             "liveness": 0.0865,
             "valence": 0.332,
             "tempo": 131.387,
-            "integrante":"Valen"
-        
-        
+            "integrante":"Valen",
+            "explicit": 0
         },
         {
             "name": "Kyoto",
@@ -405,7 +423,8 @@
             "liveness": 0.0915,
             "valence": 0.485,
             "tempo": 131.024,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":1
         },
         {
             "name": "Bambi",
@@ -424,7 +443,8 @@
             "liveness": 0.107,
             "valence": 0.281,
             "tempo": 83.768,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         },
         {
             "name": "Cool About It",
@@ -443,7 +463,8 @@
             "liveness": 0.115,
             "valence": 0.408,
             "tempo": 93.213,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         },
         {
 
@@ -463,7 +484,8 @@
             "liveness": 0.59,
             "valence": 0.415,
             "tempo": 165.886,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         },
         {
             "name":"Stay Soft",
@@ -482,7 +504,8 @@
             "liveness": 0.59,
             "valence": 0.415,
             "tempo": 165.886,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         },
         {
             "name": "Till Death",  
@@ -501,7 +524,8 @@
             "liveness": 0.0929,
             "valence": 0.279,
             "tempo": 76.03,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         },
         {
             "name": "Pristine",
@@ -520,7 +544,8 @@
             "liveness": 0.102,
             "valence": 0.292,
             "tempo": 126.241,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":1
         },
         {
             "name":"anything",
@@ -539,7 +564,8 @@
             "liveness": 0.0874,
             "valence": 0.51,
             "tempo": 83.943,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
                 
         },
         {
@@ -559,7 +585,9 @@
             "liveness": 0.126,
             "valence": 0.296,
             "tempo": 90.928,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
+
 
         },
         {
@@ -579,7 +607,8 @@
             "liveness": 0.326,
             "valence": 0.0677,
             "tempo": 119.959,
-            "integrante":"Tomi"
+            "integrante":"Tomi",
+            "explicit":0
         }
 
     ]
