@@ -1,6 +1,6 @@
 import json
 
-with open("canciones.json","r") as file:
+with open("/home/linux/Documents/VD/Final/vd_s1_proyecto_final_Bonas_LozaMontana_Curzio/data/canciones.json","r") as file:
     data=json.load(file)    
 
 playlist=data['canciones']
@@ -30,5 +30,5 @@ for canciones in playlist:
 
     
 
-with open("canciones.json","w") as file:
+with open("pruebas.json","w") as file:
     json.dump(data,file)    
