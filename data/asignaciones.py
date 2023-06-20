@@ -8,27 +8,27 @@ playlist=data['canciones']
 
 for canciones in playlist:
     if canciones["valence"]<=0.3 and canciones["energy"]<=0.3:
-        canciones["categoria"]=11
+        canciones["blob"] = "11.svg"
     if canciones["valence"]<=0.3 and 0.3<canciones["energy"]<=0.6:
-        canciones["categoria"]=12
+        canciones["blob"]="12.svg"
     if canciones["valence"]<=0.3 and 0.6<canciones["energy"]<=1:
-        canciones["categoria"]=13
+        canciones["blob"]="13.svg"
     
     if 0.3<canciones["valence"]<=0.6 and canciones["energy"]<=0.3:
-        canciones["categoria"]=21
+        canciones["blob"]="21.svg"
     if 0.3<canciones["valence"]<=0.6 and 0.3<canciones["energy"]<=0.6:
-        canciones["categoria"]=22
+        canciones["blob"]="22.svg"
     if 0.3<canciones["valence"]<=0.6 and 0.6<canciones["energy"]<=1:
-        canciones["categoria"]=23
+        canciones["blob"]="23.svg"
 
     if 0.6<canciones["valence"]<=1 and canciones["energy"]<=0.3:
-        canciones["categoria"]=31
+        canciones["blob"]="31.svg"
     if 0.6<canciones["valence"]<=1 and 0.3<canciones["energy"]<=0.6:
-        canciones["categoria"]=32
+        canciones["blob"]="32.svg"
     if 0.6<canciones["valence"]<=1 and 0.6<canciones["energy"]<=1:
-        canciones["categoria"]=33
+        canciones["blob"]="33.svg"
 
     
 
-with open("/home/linux/Documents/VD/Final/vd_s1_proyecto_final_Bonas_LozaMontana_Curzio/canciones/canciones.json","w") as file:
+with open("canciones.json","w") as file:
     json.dump(data,file)    
