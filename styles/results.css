@@ -1,5 +1,5 @@
 .results {
-  margin-top: 90px !important;
+  margin-top: -20px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.results h2 {
+  font-size: 50px;
+  color: #76A5C4;
+}
+
+.percentage {
+  color: #76A5C4;
+  font-size: 70px;
+  margin-top: -0px;
+  margin-bottom: -50px;
+}
+
+h4 {
+  font-weight: 500 !important; 
+  font-size: 35px !important;
+  color: #E6E6E6;
+  margin-bottom: 30px;
 }
 
 #Gaston {
