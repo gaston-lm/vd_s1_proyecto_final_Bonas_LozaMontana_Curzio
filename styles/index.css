@@ -35,7 +35,7 @@
 }
 
 #container_inicio_quiz {
-  width: 209px;
+  width: 300px;
   height: 47px;
   display: flex;
   justify-content: center;
@@ -44,6 +44,13 @@
   align-items: center;
   margin-top: 20px;
   transition: background-color 0.3s ease;
+}
+
+#inicio_quiz {
+  font-weight: 400;
+  font-size: 18px;
+  color: #1E1C1C;
+  margin-right: 10px;
 }
 
 #container_inicio_quiz:hover {
@@ -182,6 +189,22 @@
   margin-top: 10px;
 }
 
+/* estas_listo */
+
+.estas_listo {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.estas_listo h2 {
+  font-size: 40px;
+  color: #76A5C4;
+  margin-top: 0px;
+}
 /*
 .intro__dek {
   color: #8a8a8a;
