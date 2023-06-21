@@ -198,12 +198,18 @@
   justify-content: center;
   align-items: center;
   padding-top: 0px;
+  margin-bottom: 30px;
 }
 
 .estas_listo h2 {
   font-size: 40px;
+  font-weight: 700;
   color: #76A5C4;
-  margin-top: 0px;
+}
+
+#inicio_quiz {
+  font-weight: 600;
+  color: #1E1C1C;
 }
 /*
 .intro__dek {

@@ -67,6 +67,12 @@ function displayAnswerPercentages(answerCounts) {
     document.querySelector('#display_tomi').src = "media/resultados/tomi_3.svg"
   }
 
+  if (playlist == "empate") {
+    document.querySelector('#display_valen').src = "media/resultados/empate_1.svg"
+    document.querySelector('#display_gaston').src = "media/resultados/empate_2.svg"
+    document.querySelector('#display_tomi').src = "media/resultados/empate_3.svg"
+  }
+
   return playlist;
 }
 
