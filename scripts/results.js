@@ -4,7 +4,6 @@ const urlParams = new URLSearchParams(queryString);
 
 // Parse the query parameters into an object
 const answerCounts = Object.fromEntries(urlParams.entries());
-console.log(answerCounts[3]);
 
 function displayAnswerPercentages(answerCounts) {
 
@@ -13,23 +12,28 @@ function displayAnswerPercentages(answerCounts) {
   let percentageValen
   let percentageGaston;
   let percentageTomi;
+  let playlist;
   // Calculate the percentages for each answer option
   if (answerCounts[1] >= 5) {
     percentageValen = (5 / 10) * 100;
     percentageGaston = (3 / 10) * 100;
     percentageTomi = (2 / 10) * 100;
+    playlist = "valen";
   } else if (answerCounts[2] >= 5) {
     percentageValen = (3 / 10) * 100;
     percentageGaston = (6 / 10) * 100;
     percentageTomi = (1 / 10) * 100;
+    playlist = "gaston";
   } else if (answerCounts[3] >= 5) {
     percentageValen = (2 / 10) * 100;
     percentageGaston = (2 / 10) * 100;
     percentageTomi = (6 / 10) * 100;
+    playlist = "tomi";
   } else {
     percentageValen = (3 / 10) * 100;
     percentageGaston = (4 / 10) * 100;
     percentageTomi = (3 / 10) * 100;
+    playlist = "empate";
   }
 
   answerPercentages['Valen'] = percentageValen;
@@ -44,140 +48,255 @@ function displayAnswerPercentages(answerCounts) {
     const percentageText = `${percentage}%`;
     option.querySelector('.percentage').textContent = percentageText;
   });
+
+  if (playlist == "valen") {
+    document.querySelector('#display_valen').src = "media/resultados/valen_1.svg"
+    document.querySelector('#display_gaston').src = "media/resultados/valen_2.svg"
+    document.querySelector('#display_tomi').src = "media/resultados/valen_3.svg"
+  }
+
+  if (playlist == "gaston") {
+    document.querySelector('#display_valen').src = "media/resultados/gaston_1.svg"
+    document.querySelector('#display_gaston').src = "media/resultados/gaston_2.svg"
+    document.querySelector('#display_tomi').src = "media/resultados/gaston_3.svg"
+  }
+
+  if (playlist == "tomi") {
+    document.querySelector('#display_valen').src = "media/resultados/tomi_1.svg"
+    document.querySelector('#display_gaston').src = "media/resultados/tomi_2.svg"
+    document.querySelector('#display_tomi').src = "media/resultados/tomi_3.svg"
+  }
+
+  return playlist;
 }
 
-displayAnswerPercentages(answerCounts);
-
-
-// ---------------------------------------------------------------------------------------
-
-// using d3 for convenience
-let main = d3.select("main");
-let scrolly = main.select("#scrolly");
-let $figure = scrolly.select("figure");
-let wChart = 1200
-let hChart = wChart * 0.5;
-let dataChart = [];
-let $step;
-
-// initialize the scrollama
-let scroller = scrollama();
-
-// fetch data
-d3.csv("./data/JugadoresArgentina2022.csv", d3.autoType).then(function (data) {
-  dataChart = data;
-  // kick things off
-  init();
-});
-
-function handleStepExit(response) {
-  // if ($step) {
-  console.count("classed");
-  d3.select(response.element).classed("is-active", false);
-  // }
+let playlist = displayAnswerPercentages(answerCounts);
+let playlistPath;
+if (playlist == "valen") {
+  playlistPath = "data/playlist/playlist_valen.json";
+} else if (playlist == "gaston") {
+  playlistPath = "data/playlist/playlist_tonga.json";
+} else if (playlist == "tomi") {
+  playlistPath = "data/playlist/playlist_tomi.json";
+} else {
+  playlistPath = "data/playlist/playlist_empate.json";
 }
 
-// scrollama event handlers
-function handleStepEnter(response) {
-  // console.log(response);
-  $step = d3.select(response.element);
+// Plots
 
-  // add color to current step only
-  // if ($step) {
-  $step.classed("is-active", true);
-  console.count("classed");
-  // }
-
-  $step.style("background", "#ff00002e");
-
-  // create new chart
-  const key = $step.attr("data-step");
-
-  // console.log("response.element", response.element);
-  // console.log("$step", $step);
-  // console.log("key", key);
-  console.log(key)
-  createChart(key);
-}
-
-function handleStepProgress(response) {
-  // console.log(response);
-  // $figure.style("opacity", response.progress);
-  // $step = d3.select(response.element);
-  // console.log($step.attr("data-step"));
-  $step.select(".progress").text(d3.format(".1%")(response.progress));
-}
-
-function init() {
-  // 1. setup the scroller passing options
-  // 		this will also initialize trigger observations
-  // 2. bind scrollama event handlers (this can be chained like below)
-  scroller
-    .setup({
-      step: "#scrolly article .step",
-      offset: 0.33,
-      debug: false,
-      progress: true,
-    })
-    .onStepEnter(handleStepEnter)
-    .onStepExit(handleStepExit)
-    .onStepProgress(handleStepProgress);
-}
-
-/* DataViz */
-function createChart(key) {
+d3.json(playlistPath, d3.autoType).then((data)=>{
+  const canciones = data.songs
+  // console.log(canciones)
   let chart = Plot.plot({
-    width: wChart,
-    height: hChart,
-    grid: true,
-    marginTop: 50,
-    marginBottom: 100,
-    marginLeft: 50,
-    marginRight: 50,
-    x: {
-      ticks: 10,
-      label: key,
-      axis: "top",
-    },
+
     marks: [
-      Plot.dot(
-        dataChart,
-        Plot.dodgeY({
-          x: key,
-          padding: 10,
-          r: 15,
-          anchor: "middle",
-          fill: "puesto",
+      Plot.image(canciones,
+        Plot.dodgeX({
+          y: "explicit",
+          padding: 15,
+          r: 60,
+          src: "blob",
+          title:  d => `${d.name}\n${d.artist}`
         })
       ),
-      Plot.image(
-        dataChart,
+      Plot.axisY(
+        {
+          tickSize: 0,
+          fontSize: 0,
+        }
+      )
+    ],
+    y: {
+      label: '',
+      ticks: 0,
+    },
+    width: 1000,
+    height: 450,
+    insetTop: 40,
+    insetBottom: 40,
+    style: {
+      background: '#262323'
+    }
+  });
+
+  d3.select("#chart_explicit").append(()=> chart);
+  
+  d3.selectAll("#chart_explicit image")
+    .attr("clip-path", function(d) {
+      return 0;
+    }
+  );
+
+  d3.selectAll("#chart_explicit image")
+  .each(function (d) {
+    const image = d3.select(this);
+    const titleText = image.select("title").text().split("\n")[0];
+    console.log(titleText)
+    const song = canciones.find((s) => s.name === titleText);
+    image.attr("id", song.id);
+    const danceability = song.danceability
+
+    // clasificación de danceability 
+    if (danceability < 0.33) {
+      image.attr("class", "vibrate-animationL");
+    } else if (danceability < 0.66) {
+      image.attr("class", "vibrate-animationM");
+    } else {
+      image.attr("class", "vibrate-animationR");
+    }
+    
+    image.attr("data-preview-url", song.preview_url);
+    image
+      .on("mouseover", function () {
+        const previewUrl = d3.select(this).attr("data-preview-url");
+        document.getElementById('audioPlayer').src = previewUrl;
+        document.getElementById('audioPlayer').play();
+      })
+      .on("mouseout", function () {
+        document.getElementById('audioPlayer').pause();
+      });
+    }
+  );
+
+})
+
+d3.json(playlistPath, d3.autoType).then((data)=>{
+  const canciones = data.songs
+  // console.log(canciones)
+  let chart = Plot.plot({
+
+    marks: [
+      Plot.image(canciones,
         Plot.dodgeY({
-          x: key,
-          padding: 10,
-          r: 15,
-          anchor: "middle",
-          src: "carita",
-          width: 30,
-          title: (d) => `${d.nombre}\n${d.edad} años`,
-        })
-      ),
-      Plot.text(
-        dataChart,
-        Plot.dodgeY({
-          x: key,
-          padding: 10,
-          r: 15,
-          dy: 20,
-          anchor: "middle",
-          text: "apellido",
-          width: 30,
+          x: "popularity",
+          padding: 15,
+          r: 40,
+          src: "blob",
+          title:  d => `${d.name}\n${d.artist}`
         })
       ),
     ],
+    x: {
+      tickRotate: 0,
+      label: "Popularidad",
+      domain: [0,100],
+      tickSize: 0
+    },
+    width: 1200,
+    height: 450,
+    inset: 80,
+    insetBottom: 100,
+    style: {
+      background: '#262323'
+    }
   });
 
+  d3.select("#chart_popularity").append(()=> chart);
+  
+  d3.selectAll("#chart_popularity image")
+    .attr("clip-path", function(d) {
+      return 0;
+    }
+  );
+  
+  d3.selectAll("#chart_popularity image")
+  .each(function (d) {
+    const image = d3.select(this);
+    const titleText = image.select("title").text().split("\n")[0];
+    console.log(titleText)
+    const song = canciones.find((s) => s.name === titleText);
+    image.attr("id", song.id);
+    const danceability = song.danceability
 
-  d3.select("#scrolly figure svg").remove();
-  d3.select("#scrolly figure").append(() => chart);
-}
+    // clasificación de danceability 
+    if (danceability < 0.33) {
+      image.attr("class", "vibrate-animationL");
+    } else if (danceability < 0.66) {
+      image.attr("class", "vibrate-animationM");
+    } else {
+      image.attr("class", "vibrate-animationR");
+    }
+    
+    image.attr("data-preview-url", song.preview_url);
+    image
+      .on("mouseover", function () {
+        const previewUrl = d3.select(this).attr("data-preview-url");
+        document.getElementById('audioPlayer').src = previewUrl;
+        document.getElementById('audioPlayer').play();
+      })
+      .on("mouseout", function () {
+        document.getElementById('audioPlayer').pause();
+      });
+    }
+  );
+})
+
+d3.json(playlistPath, d3.autoType).then((data)=>{
+  const canciones = data.songs
+  // console.log(canciones)
+  
+  let chart = Plot.plot({
+    marks: [
+      Plot.image(canciones,
+        Plot.dodgeY({
+          x: "tempo",
+          padding: 15,
+          r: 40,
+          src: "blob",
+          title:  d => `${d.name}\n${d.artist}`
+        })
+      ),
+    ],
+    x: {
+      tickRotate: 0,
+      label: "Beats per minute",
+      tickSize: 0
+    },
+    width: 1200,
+    height: 450,
+    inset: 80,
+    insetBottom: 100,
+    style: {
+      background: '#262323'
+    }
+  });
+  
+  d3.select("#chart_tempo").append(()=> chart);
+  
+  d3.selectAll("#chart_tempo image")
+    .attr("clip-path", function(d) {
+      return 0;
+    }
+  );
+
+  d3.selectAll("#chart_tempo image")
+    .each(function (d) {
+      const image = d3.select(this);
+      const titleText = image.select("title").text().split("\n")[0];
+      console.log(titleText)
+      const song = canciones.find((s) => s.name === titleText);
+      image.attr("id", song.id);
+      const danceability = song.danceability
+
+      // clasificación de danceability 
+      if (danceability < 0.33) {
+        image.attr("class", "vibrate-animationL");
+      } else if (danceability < 0.66) {
+        image.attr("class", "vibrate-animationM");
+      } else {
+        image.attr("class", "vibrate-animationR");
+      }
+      
+      image.attr("data-preview-url", song.preview_url);
+      image
+        .on("mouseover", function () {
+          const previewUrl = d3.select(this).attr("data-preview-url");
+          document.getElementById('audioPlayer').src = previewUrl;
+          document.getElementById('audioPlayer').play();
+        })
+        .on("mouseout", function () {
+          document.getElementById('audioPlayer').pause();
+        });
+    }
+  );
+})

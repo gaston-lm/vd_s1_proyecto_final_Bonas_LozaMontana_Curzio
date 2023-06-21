@@ -9,13 +9,13 @@ body {
   justify-content: center;
 }
 
-.opciones svg:hover {
+/* .opciones svg:hover {
   box-shadow: 0 0 5px rgba(214, 209, 209, 0.3);
 }
 
 .opciones svg:active {
   box-shadow: 0 0 8px rgba(87, 197, 54, 0.5);
-}
+} */
 
 .preguntas {
   display: flex;

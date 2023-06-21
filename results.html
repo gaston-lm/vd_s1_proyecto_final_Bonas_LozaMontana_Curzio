@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/general.css"/>
     <link rel="stylesheet" href="styles/results.css"/>
+    <link rel="stylesheet" href="styles/animaciones.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/"/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -46,17 +47,17 @@
             <div class="result_int" id="Valen">
               <h3 class="percentage">0.00%</h3>
               <h4>Valentín</h4>
-              <img src="media/porcentajes.png" alt="">
+              <img src="" alt="" id="display_valen">
             </div>
             <div class="result_int" id="Gaston">
               <h3 class="percentage">0.00%</h3>
               <h4>Gastón</h4>
-              <img src="media/porcentajes.png" alt="">
+              <img src="media/porcentajes.png" alt="" id="display_gaston">
             </div>
             <div class="result_int" id="Tomi">
               <h3 class="percentage">0.00%</h3>
               <h4>Tomás</h4>
-              <img src="media/porcentajes.png" alt="">
+              <img src="media/porcentajes.png" alt="" id="display_tomi">
             </div>
           </div>
         </section>
@@ -72,44 +73,22 @@
               <h5>Explicit</h5>
             </div>
             
-            <div id="chart"></div>
+            <div id="chart_explicit"></div>
           </div>
         </section>
-        
-        <!-- <section id="scrolly">
-          <figure></figure>
 
-          <article>
-            <div class="step" data-step="altura">
-              <p>Altura (STEP 1)</p>
-              <p class="progress">0.0%</p>
-            </div>
-            <div class="step" data-step="edad">
-              <p>Edad (STEP 2)</p>
-              <p class="progress">0.0%</p>
-            </div>
-            <div class="step" data-step="goles">
-              <p>Goles (STEP 3)</p>
-              <p class="progress">0.0%</p>
-            </div>
-            <div class="step" data-step="pais">
-              <p>Ligas (STEP 4)</p>
-              <p class="progress">0.0%</p>
-            </div>
-          </article>
-        </section> -->
+        <section class="explicit_sec">
+          <h2>Popularidad</h2>
+          <div class="chart_section">           
+            <div id="chart_popularity"></div>
+          </div>
+        </section>
 
-        <section class="charts">
-          <!-- <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus. Erat nam at lectus
-            urna duis convallis. In eu mi bibendum neque egestas congue. Ut lectus arcu bibendum at.
-            Sit amet nisl purus in mollis nunc. Et malesuada fames ac turpis egestas sed tempus urna.
-            Velit egestas dui id ornare arcu odio ut sem nulla. Egestas tellus rutrum tellus
-            pellentesque eu tincidunt tortor. Ut lectus arcu bibendum at varius vel. Justo eget magna
-            fermentum iaculis eu. Consequat id porta nibh venenatis cras sed felis eget velit. Nisi
-            scelerisque eu ultrices vitae auctor eu augue.
-          </p> -->
+        <section class="explicit_sec">
+          <h2>Tempo</h2>
+          <div class="chart_section">           
+            <div id="chart_tempo"></div>
+          </div>
         </section>
       </main>
 
@@ -121,9 +100,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-
-    <script src="scripts\chartScript.js"></script>
     <script type="module" src="./scripts/results.js"></script>
   </body>
 </html>
