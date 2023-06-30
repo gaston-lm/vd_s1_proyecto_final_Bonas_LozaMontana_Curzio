@@ -181,6 +181,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
           title:  d => `${d.name}\n${d.artist}`
         })
       ),
+      Plot.crosshairX(canciones, {x: "popularity", textFill: "#E6E6E6", textStroke: "#262323"})
     ],
     x: {
       tickRotate: 0,
@@ -252,6 +253,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
           title:  d => `${d.name}\n${d.artist}`
         })
       ),
+      Plot.crosshairX(canciones, {x: "tempo", textFill: "#E6E6E6", textStroke: "#262323"})
     ],
     x: {
       tickRotate: 0,
