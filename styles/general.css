@@ -51,6 +51,7 @@ main {
   background: linear-gradient(180deg, #262323 0%, rgba(38, 35, 35, 0.95026) 99.99%, rgba(30, 28, 28, 0.95) 100%);
   margin: 0 auto;
   height: 79px;
+  z-index: 999;
 }
 
 .header_sections {
