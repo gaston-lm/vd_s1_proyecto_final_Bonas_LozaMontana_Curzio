@@ -95,3 +95,21 @@
 #boton_ver_analisis {
   margin-top: 20px;
 }
+
+.gracias {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gracias h2 {
+  font-size: 70px;
+  color: #76A5C4;
+}
+
+.gracias p {
+  margin: 5px;
+  font-size: 18px;
+}
