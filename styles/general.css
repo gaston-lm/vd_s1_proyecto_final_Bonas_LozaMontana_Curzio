@@ -114,6 +114,23 @@ main {
   color: #76A5C4;
 }
 
+.footer-bottom {
+  display: flex;
+  padding: 25px 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.hecho-por p {
+  font-size: 22px;
+  margin: 0;
+}
+
 /* For Webkit browsers (Chrome, Safari) */
 
 ::-webkit-scrollbar {

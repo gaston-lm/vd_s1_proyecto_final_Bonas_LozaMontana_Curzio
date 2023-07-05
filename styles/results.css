@@ -84,6 +84,16 @@
   display: flex;
 }
 
+#chart_popularity {
+  border: 2px solid #76A5C4;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+#chart_popularity svg {
+  border-radius: 30px;
+}
+
 nav {
 display: -webkit-box;
 display: -ms-flexbox;

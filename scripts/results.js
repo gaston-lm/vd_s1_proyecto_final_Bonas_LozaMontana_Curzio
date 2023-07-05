@@ -176,22 +176,37 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
         Plot.dodgeY({
           x: "popularity",
           padding: 15,
-          r: 40,
+          r: 35,
           src: "blob",
           title:  d => `${d.name}\n${d.artist}`
         })
       ),
-      Plot.crosshairX(canciones, {x: "popularity", textFill: "#E6E6E6", textStroke: "#262323"})
+      // Plot.axisX(
+      //   {
+      //     tickSize: 0,
+      //     fontSize: 0,
+      //   }
+      // ),
+      Plot.crosshairX(canciones, {
+        x: "popularity", 
+        textFill: "#E6E6E6", 
+        textStroke: "#262323", 
+        color: "#76A5C4"
+      })
     ],
     x: {
       tickRotate: 0,
-      label: "Popularidad",
+      label: null,
+      ticks: [0,50,100],
       domain: [0,100],
+      labelOffset: 40,
       tickSize: 0
     },
-    width: 1200,
+    width: 1000,
     height: 450,
-    inset: 80,
+    inset: 0,
+    insetLeft: 0,
+    marginBottom: 50,
     insetBottom: 100,
     style: {
       background: '#262323'
