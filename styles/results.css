@@ -66,7 +66,7 @@
 
 .explicit_sec h3 {
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 85px;
   color: #76A5C4;
   margin-bottom: -60px;
@@ -75,7 +75,7 @@
 
 .explicit_sec h5 {
   font-weight: 600;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: -20px;
   text-align: center;
 }
@@ -112,4 +112,8 @@
 .gracias p {
   margin: 5px;
   font-size: 18px;
+}
+
+.porcentajes_div {
+  margin-top: 20px;
 }

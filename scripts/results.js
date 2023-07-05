@@ -100,7 +100,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
         Plot.dodgeX({
           y: "explicit",
           padding: 15,
-          r: 60,
+          r: 48,
           src: "blob",
           title:  d => `${d.name}\n${d.artist}`
         })
@@ -116,7 +116,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
       label: '',
       ticks: 0,
     },
-    width: 1000,
+    width: 900,
     height: 450,
     insetTop: 40,
     insetBottom: 40,
