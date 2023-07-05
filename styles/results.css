@@ -1,9 +1,10 @@
 .results {
-  margin-top: 10px !important;
+  margin-top: -15px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+  height: 90vh;
 }
 
 .integrantes_results {
@@ -48,6 +49,7 @@
   flex-direction: column;
   align-items: center;
   height: 90vh;
+  margin-top: 50px
 }
 
 .explicit_sec h2 {
@@ -76,7 +78,7 @@
 .explicit_sec h5 {
   font-weight: 600;
   font-size: 30px;
-  margin-bottom: -20px;
+  margin-bottom: px;
   text-align: center;
 }
 
@@ -93,7 +95,7 @@
 }
 
 #boton_ver_analisis {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .gracias {
@@ -102,15 +104,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px
 }
 
 .gracias h2 {
   font-size: 70px;
   color: #76A5C4;
+  margin-bottom: 25px;
 }
 
 .gracias p {
-  margin: 5px;
+  margin: 3px;
   font-size: 18px;
 }
 

@@ -189,7 +189,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
       ),
       Plot.crosshairX(canciones, {
         x: "popularity", 
-        textFill: "#E6E6E6", 
+        textFill: "#8ec7ed", 
         textStroke: "#262323", 
         color: "#76A5C4",
         textStrokeWidth: 20.5
@@ -279,7 +279,7 @@ d3.json(playlistPath, d3.autoType).then((data)=>{
           fontSize: 0,
         }
       ),
-      Plot.crosshairX(canciones, {x: "loudness", textFill: "#E6E6E6", textStroke: "#262323"})
+      Plot.crosshairX(canciones, {x: "loudness", textFill: "#8ec7ed", textStroke: "#262323"})
     ],
     x: {
       tickRotate: 0,
